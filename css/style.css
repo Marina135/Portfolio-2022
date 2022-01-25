@@ -178,3 +178,12 @@ body {
     padding-top: 25px;
     padding-left: 40px;
 }
+
+.profilepic {
+    display: flex;
+    width: 351px;
+    height: 237px;
+    margin-left: 50px;
+    margin-top: 90px;
+    border: black solid 2px;
+}
