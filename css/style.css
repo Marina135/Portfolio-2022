@@ -148,3 +148,15 @@ body {
     color: black;
     box-shadow: 0 0 10px white;
 }
+
+.subheading {
+    position: absolute;
+    width: 1152px;
+    height: 98px;
+    left: 0px;
+    top: 207px;
+
+    background: #B58D41;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+}
