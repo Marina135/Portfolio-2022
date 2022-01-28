@@ -248,9 +248,73 @@ body {
     background: #2A2B2A;
 }
 
-.footerheader {
-    padding-top: 50px;
+.footerheading {
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    left: 55px;
+    top: 30px;
+
+    font-family: Abhaya Libre ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 48px;
+    /* or 133% */
 
     color: #FFFFFF;
 
+
+}
+
+.sitelist {
+    position: absolute;
+    width: 868px;
+    height: 203px;
+    left: 85px;
+    top: 100px;
+
+    font-family: Abhaya Libre ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 48px;
+    /* or 200% */
+
+    color: #FFFFFF;
+
+}
+
+.footerheading2 {
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    left: 1000px;
+    top: 30px;
+
+    font-family: Abhaya Libre ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 48px;
+    /* or 133% */
+
+    color: #FFFFFF;
+}
+
+.sitelist2 {
+    position: absolute;
+    width: 868px;
+    height: 203px;
+    left: 1000px;
+    top: 100px;
+
+    font-family: Abhaya Libre ExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 48px;
+    /* or 200% */
+
+    color: #FFFFFF;
 }
