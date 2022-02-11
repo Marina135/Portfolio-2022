@@ -5,82 +5,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <title>Welcome!</title>
+        <title>Portfolio</title>
     </head>
 
-    <body style="background-color: #D9D3B8; width: 100%;">
-        <header>
-            <div class="heading">
-                <h1 class="quote">Art is a line around your thoughts Gustav Klimt</h1>
-            </div>
-
-            <div class="logo">
-                <img src="Components/MyLogo-02.png">
-            </div>
+    <body style="background-color: #D9D3B8;">
+        <header class="header" id="header">
+            <div class="logo"><img src="Components/MyLogo-02.png"></div>
+            <h1 class="heading1">"Art is never finished, only abandoned."<br>Leonardo da Vinci</h1>
         </header>
-
-        <nav class="nav">
-            <ul class="nav-links">
+        <nav class="navbar">
+            <ul>
                 <li><a href="profile.html">Profile</a></li>
-                <li><a href="#">|</a></li>
                 <li class="active"><a href="#">Portfolio</a></li>
-                <li><a href="#">|</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">|</a></li>
-                <li><a href="https://www.linkedin.com/in/marina-akhter/">LinkedIn</a></li>
-                <li><a href="#">|</a></li>
-                <li><a href="https://www.instagram.com/marina96_designs/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/marina-akhter-474584165/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/marina96_designs/" target="_blank">Instagram</a></li>
             </ul>
         </nav>
 
         <section class="content">
-            <div class="subheading">
-                <h2 class="title2" style="margin-top: 45px;">My Portfolio</h2>
-            </div>
+            <h2 class="heading2">My Portfolio</h2>
         </section>
 
-        <section class="line">
-            <div></div>
-        </section>
-
-        <section class="display" style="background-color: #ffffff00; top: 550px; height: 100%;">
-            <div class="portfolionav" style="top: 20px; left: 200px;">
-                <img src="Components/graphic-02.png">
-            </div>
-            <div class="portfolionav" style="top: 550px; left: 200px;">
-                <img src="Components/uxui-03.png">
-            </div>
-            <div class="portfolionav" style="top: 1080px; left: 200px;">
-                <img src="Components/product-04.png">
-            </div>
-            <div class="portfolionav" style="top: 1630px; left: 200px;">
-                <img src="Components/brand-05.png">
+        <section class="info">
+            <div class="profile" style="display: flex; flex-direction: column;">
+                <div style="margin-left: 55px;"><a href="graphic.html"><img src="Components/graphic-02.png"></a></div>
+                <div style="margin-left: 55px;"><img src="Components/uxui-03.png"></div>
+                <div style="margin-left: 55px;"><img src="Components/product-04.png"></div>
+                <div style="margin-left: 55px;"><img src="Components/brand-05.png"></div>
             </div>
         </section>
     </body>
 
-    <footer class="footer" style="top: 2800px;">
-        <div>
-            <h3 class="footerheading">Contact Info:</h3>
-            <ul class="sitelist">
-                <li>Hotmail: marina_akhter@hotmail.com</li>
-                <li>Gmail: marina135@gmail.com</li>
-                <li>Instagram: marina96_designs</li>
-                <li>LinkedIn: https://www.linkedin/in/marina-akhter</li>
-            </ul>
-        </div>
-        <div>
-            <h3 class="footerheading2">Site:</h3>
-            <ul class="sitelist2">
-                <li>Profile</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-                <span class="site"><a href="https://www.linkedin.com/in/marina-akhter"><li>LinkedIn</li></a></span>
-                <span class="site"><a href="https://www.instagram.com/marina96_designs/"><li>Instagram</li></a></span>
-            </ul>
+    <footer class="footer">
+        <div class="d-flex flex-row bd-highlight mb-3 d-flex justify-content-between">
+            <div class="p-2 bd-highlight Contactinfo">
+                <h4 class="f-title">Contact Info:</h4>
+                    <ul>
+                        <li>Gmail: marina135@gmail.com</li>
+                        <li>Hotmail: marina_akhter@hotmail.com</li>
+                        <li>Instagram: marina96_designs</li>
+                        <a href="https://www.linkedin.com/in/marina-akhter" target="_blank" style="text-decoration: none; color: white;"><li>Linkedin: https://www.linkedin.com/in/marina-akhter</li></a>
+                    </ul>
+            </div>
+            <div class="p-2 bd-highlight Site">
+                <h4 class="f-title">Site</h4>
+                    <ul>
+                        <a href="profile.html" style="text-decoration: none; color: white;"><li>Profile</li></a>
+                        <a href="portfolio.html" style="text-decoration: none; color: white;"><li>Portfolio</li></a>
+                        <a href="#" style="text-decoration: none; color: white;"><li>Contact</li></a>
+                        <a href="#" style="text-decoration: none; color: white;"><li>LinkedIn</li></a>
+                        <a href="#" style="text-decoration: none; color: white;"><li>Instagram</li></a>
+                    </ul>
+            </div>
         </div>
     </footer>
 </html>

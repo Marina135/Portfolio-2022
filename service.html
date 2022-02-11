@@ -8,122 +8,114 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <title>Welcome!</title>
+        <title>Service</title>
     </head>
 
-    <body style="background-color: #D9D3B8; width: 100%;">
-        <header>
-            <div class="heading">
-                <h1 class="quote">Art is a line around your thoughts Gustav Klimt</h1>
-            </div>
+    <body style="background-color: #D9D3B8;">
+        <header class="header" id="header">
+            <div class="logo"><img src="Components/MyLogo-02.png"></div>
+            <h1 class="heading1">“Art is a line around your thoughts” <br> Gustav Klimt</h1>
         </header>
-
-        <nav class="nav">
-            <ul class="nav-links">
-                <li class="active"><a href="#">Profile</a></li>
-                <li><a href="#">|</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">|</a></li>
+        <nav class="navbar">
+            <ul>
+                <li class="active"><a href="profile.html">Profile</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">|</a></li>
-                <li><a href="https://www.linkedin.com/in/marina-akhter/">LinkedIn</a></li>
-                <li><a href="#">|</a></li>
-                <li><a href="https://www.instagram.com/marina96_designs/">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/marina-akhter-474584165/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/marina96_designs/" target="_blank">Instagram</a></li>
             </ul>
         </nav>
 
-        <section>
-            <div>
-                <a href="profile.html"><img src="Components/Back-08.png" class="back"></a>
-                <h4 class="breadcrumb" style="background-color: #D9D3B8;">Profile - Services</h4>
-            </div>
+        <section class="breadcrumbs">
+            <a href="profile.html"><img src="Components/Back-08.png"></a>
+            <h5 class="b-title">Profile - Services</h5>
         </section>
+
 
         <section class="line">
             <div></div>
         </section>
 
-        <section class="content2">
-            <div class="subheading2">
-                <h2 class="title2">My Services</h2>
-            </div>
+        <section class="content">
+            <h2 class="heading2">My Services</h2>
         </section>
 
-        <section>
-            <div class="display" style="height: 1000px;">
-                <div>
-                    <h4 class="serviceheading" style="position: absolute; left: 120px; top: 10px;">Graphic Design</h4>
-                    <ul class="servicepoints" style="left: 130px; top: 100px;">
-                        <li>Print Design</li>
-                        <li>Stationery Design</li>
-                        <li>Label Design</li>
-                        <li>Business Card Design</li>
-                        <li>Signage Design</li>
-                        <li>Brochure Design</li>
-                    </ul>
-                    <img src="Components/WGraphicDesign-14.png" style="position: absolute; top: 350px; left: 80px;">
-                </div>
+        <section class="info">
+            <div class="decor">
+                <div class="profile" style="display: flex; flex-direction: column;">
+                    <h3 class="about">What I can do for you:</h3>
+                    <div class="servicesinfo" style="display: flex; flex-direction: row;">
+                        <div style="display: flex; flex-direction: column;">
+                            <h4 class="subheading">Graphic Design</h4>
+                            <ul>
+                                <li>Print Design</li>
+                                <li>Stationery Design</li>
+                                <li>Label Design</li>
+                                <li>Business Cards Design</li>
+                                <li>Signage Design</li>
+                                <li>Brochure Design</li>
+                            </ul>
+                            <img src="Components/WGraphicDesign-14.png" class="servicebutton">
 
-                <div>
-                    <h4 class="serviceheading" style="position: absolute; left: 850px; top: 10px;">Product Design</h4>
-                    <ul class="servicepoints" style="position: absolute; left: 860px; top: 100px;">
-                        <li>Canvas Design</li>
-                        <li>T-shirt Design</li>
-                        <li>Mug Design</li>
-                        <li>Packaging Design</li>
-                        <li>Sticker Design</li>
-                    </ul>
-                    <img src="Components/Product-16.png" style="position: absolute; top: 330px; left: 820px;">
-                </div>
+                            <h4 class="subheading">UX/UI Design</h4>
+                            <ul>
+                                <li>User Research</li>
+                                <li>Wireframing</li>
+                                <li>Lo-fi Prototyping</li>
+                                <li>Mid-fi Prototyping</li>
+                                <li>Hi-fi Prototyping</li>
+                                <li>User Testing</li>
+                                <li>HTML/CSS Coding</li>
+                            </ul>
+                            <img src="Components/UI-15.png" class="servicebutton">
+                        </div>
+                        <div style="display: flex; flex-direction: column; margin-right: 50px; margin-left: 100px;">
+                            <h4 class="subheading">Product Design</h4>
+                            <ul>
+                                <li>Canvas Design</li>
+                                <li>T-Shirt Design</li>
+                                <li>Mug Design</li>
+                                <li>Packaging Design</li>
+                                <li>Sticker Design</li>
+                            </ul>
+                            <img src="Components/Product-16.png" class="servicebutton">
 
-                <div>
-                    <h4 class="serviceheading" style="position: absolute; left: 120px; top: 480px;">UX/UI Design</h4>
-                    <ul class="servicepoints" style="position: absolute; left: 130px; top: 580px;">
-                        <li>User Research</li>
-                        <li>Wireframing</li>
-                        <li>Lo-fi Prototyping</li>
-                        <li>Mid-fi Prototyping</li>
-                        <li>Hi-fi Prototyping</li>
-                        <li>User Testing</li>
-                        <li>HTML/CSS Coding</li>
-                    </ul>
-                    <img src="Components/UI-15.png" style="position: absolute; top: 880px; left: 80px;">
-                </div>
-
-                <div>
-                    <h4 class="serviceheading" style="position: absolute; top: 480px; left: 850px;">Brand Identity</h4>
-                    <ul class="servicepoints" style="position: absolute; top: 580px; left: 860px;">
-                        <li>Logo Design</li>
-                        <li>Brand Message</li>
-                        <li>Brand Manual Design</li>
-                        <li>Style Guide Design</li>
-                    </ul>
-                    <img src="Components/Brand-17.png" style="position: absolute; top: 770px; left: 820px;">
+                            <h4 class="subheading">Brand Identity</h4>
+                            <ul>
+                                <li>Logo Design</li>
+                                <li>Brand Message</li>
+                                <li>Brand Manual Design</li>
+                                <li>Style Guide Design</li>
+                            </ul>
+                            <img src="Components/Brand-17.png" class="servicebutton">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
     </body>
 
     <footer class="footer">
-        <div>
-            <h3 class="footerheading">Contact Info:</h3>
-            <ul class="sitelist">
-                <li>Hotmail: marina_akhter@hotmail.com</li>
-                <li>Gmail: marina135@gmail.com</li>
-                <li>Instagram: marina96_designs</li>
-                <li>LinkedIn: https://www.linkedin/in/marina-akhter</li>
-            </ul>
-        </div>
-        <div>
-            <h3 class="footerheading2">Site:</h3>
-            <ul class="sitelist2">
-                <li>Profile</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-                <li>LinkedIn</li>
-                <li>Instagram</li>
-            </ul>
+        <div class="d-flex flex-row bd-highlight mb-3 d-flex justify-content-between">
+            <div class="p-2 bd-highlight Contactinfo">
+                <h4 class="f-title">Contact Info:</h4>
+                    <ul>
+                        <li>Gmail: marina135@gmail.com</li>
+                        <li>Hotmail: marina_akhter@hotmail.com</li>
+                        <li>Instagram: marina96_designs</li>
+                        <a href="https://www.linkedin.com/in/marina-akhter" target="_blank" style="text-decoration: none; color: white;"><li>Linkedin: https://www.linkedin.com/in/marina-akhter</li></a>
+                    </ul>
+            </div>
+            <div class="p-2 bd-highlight Site">
+                <h4 class="f-title">Site</h4>
+                    <ul>
+                        <a href="profile.html" style="text-decoration: none; color: white;"><li>Profile</li></a>
+                        <a href="portfolio.html" style="text-decoration: none; color: white;"><li>Portfolio</li></a>
+                        <a href="#" style="text-decoration: none; color: white;"><li>Contact</li></a>
+                        <a href="#" style="text-decoration: none; color: white;"><li>LinkedIn</li></a>
+                        <a href="#" style="text-decoration: none; color: white;"><li>Instagram</li></a>
+                    </ul>
+            </div>
         </div>
     </footer>
 </html>

@@ -1,419 +1,456 @@
-body {
-    background-color: #F2D398;
-    width: 100%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.welcome {
-    position: absolute;
-    width: 1108px;
-    height: 297px;
-    left: 145px;
-    top: 10px;
-
-    font-family: Abhaya Libre ExtraBold;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 270px;
-    line-height: 319px;
-
-    color: #111C26;
-
-}
-
-.name {
-    position: absolute;
-    width: 1174px;
-    height: 200px;
-    left: 169px;
-    top: 260px;
-
-    font-family: Abhaya Libre Medium;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 180px;
-    line-height: 212px;
-
-    color: #2D4459;
-
-}
-
-.title {
-    position: absolute;
-    width: 1124px;
-    height: 89px;
-    left: 169px;
-    top: 480px;
-
-    font-family: Abhaya Libre;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 75px;
-    line-height: 88px;
-
-    color: #111C26;
-
-}
-
-.title2 {
-    width: 100%;
-    height: 42px;
-    left: 155px;
-    top: 236px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 70px;
-    line-height: 42px;
-
-    color: #111C26;
-
-}
-
-.logo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 20px;
-    top: 45px;
-}
-
-.display {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0px;
-    top: 650px;
-
-    background: #1A616A;
-}
-
-.active {
-    text-decoration: underline;
-    font-weight: bolder;
-    border: white solid 2px;
-}
-
-.button1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 70px;
-    top: 600px;
-
-}
-
-.button2 {
-    position: absolute;
-    width: 264px;
-    height: 76px;
-    left: 780px;
-    top: 600px;
-
-}
-
-.button3 {
-    position: absolute;
-    width: 456px;
-    height: 132px;
-}
-
-.welcomepage {
-    position: relative;
-    width: 1512px;
-    height: 982px;
-
-    background: #F2D398;
-}
-
-.heading {
-    position: absolute;
-    width: 100%;
-    height: 253px;
-    left: 0px;
-    top: 0px;
-
-    background: #D9D3B8;
-
-}
-
-.quote {
-    position: absolute;
-    width: 1138px;
-    height: 186px;
-    left: 218px;
-    top: 38px;
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 65px;
-    line-height: 93px;
-/* or 124% */
-    text-align: right;
-
-    color: #111C26;
-
-}
-
-.nav {
-    position: absolute;
-    width: 100%;
-    height: 125px;
-    left: 0px;
-    top: 253px;
-
-    background: #0E4C59;
-
+.Welcome {
     display: flex;
-    justify-content: center !important;
-    align-items: center;
+    flex-direction: column;
+    background-color: #F2D398;
 }
 
-.nav ul {
+.navbar {
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+    background-color: #0E4C59;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navbar ul {
     display: flex;
     list-style: none;
     margin: 20px 0px;
 }
 
-.nav ul li{
+.navbar ul li{
     font-family: Roboto;
-    font-size: 30px;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-.nav ul li a{
+.navbar ul li a{
     text-decoration: none;
     color: white;
     padding: 8px 25px;
     transition: all .5s ease;
 }
 
-.nav ul li a:hover{
+.navbar ul li a:hover{
     font-weight: bolder;
     background-color: white;
     color: black;
     box-shadow: 0 0 10px white;
 }
 
-.subheading {
-    position: absolute;
-    width: 100%;
-    height: 98px;
-    left: 0px;
-    top: 375px;
-
-    box-sizing: border-box;
-    padding-top: 25px;
-    padding-left: 40px;
-}
-
-.profilepic {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 60px;
-    top: 140px;
-}
-
-.about {
-    position: absolute;
-    width: 425px;
-    height: 119px;
-    left: 500px;
-    top: 100px;
-
-    font-family: Abhaya Libre ExtraBold;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 60px;
-    line-height: 113px;
-
-    color: #FFFFFF;
-
-}
-
-.aboutpara {
-    position: absolute;
-    width: 630px;
-    height: 1308px;
-    left: 500px;
-    top: 220px;
-
-    font-family: Abhaya Libre;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 55px;
-/* or 133% */
-
-    color: #FFFFFF;
-
-}
-
-.back {
-    position: absolute;
-    top: 400px;
-    left: 30px;
-}
-
-.breadcrumb {
-    position: absolute;
-    top: 420px;
-    left: 135px;
-    background-color: #DAC5C0;
-    text-decoration: underline;
-}
-
-.resume {
-    position: absolute;
-    left: 400px;
-    top: 10px;
-}
-
-.subheading2 {
-    position: absolute;
-    width: 100%;
-    height: 125px;
-    top: 520px;
-    left: 120px;
-    padding-top: 40px;
-    padding-left: 35px;
-}
-
 .line {
-    position: absolute;
+    display: flex;
     width: 100%;
-    height: 0px;
-    left: 0px;
-    top: 510px;
 
     border: 6px solid #111C26;
 }
 
-.serviceheading {
-    position: absolute;
-    width: 100%;
-    height: 119px;
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+}
 
+.b-title {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.path {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2D398;
+    align-items: center;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 1430px;
+}
+
+.pathtext {
+    margin-left: 20px;
+    text-decoration: underline;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.header {
+    display: flex;
+    background-color: #D9D3B8;
+    position: static;
+    top: 0;
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.heading1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #111C26;
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    height: 98px;
+    left: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-style: Roboto;
+    background-color: #9e0031;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border: black solid 2px;
+    height: 98px;
+    left: 0;
+}
+
+.heading2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Roboto, bold;
+    font-weight: bolder;
+    color: #111C26;
+    font-size: 50px;
+    margin-left: 35px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    width: 100%;
+}
+
+.decor {
+    left: fixed;
+    width: 100%;
+    background-color: #0E4C59;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+
+.subcontent {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    background-color: #F2D398;
+}
+
+.imgportfolio {
+    display: flex;
+    height: 450px;
+    width: 1268px;
+    margin-top: 150px;
+}
+
+.profilepic {
+    display: flex;
+    width: 60%;
+    height: 90%;
+    border-style: outset;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right: white solid 5px;
+    border-bottom: white solid 5px;
+    margin-top: 20px;
+
+    margin-left: 50px;
+}
+
+.about {
+    display: flex;
+ 
     font-family: Abhaya Libre ExtraBold;
     font-style: normal;
     font-weight: 800;
-    font-size: 35px;
-    line-height: 113px;
+    font-size: 3rem;
+    line-height: 2rem;
+ 
+    color: #FFFFFF;
 
-    color: #F0F2F0;
+    margin-left: 35px;
+    margin-top: 25px;
+
 }
 
-.servicepoints {
-    position: absolute;
-    width: 100%;
-    height: 119px;
-
-    font-family: Abhaya Libre;
-    font-style: normal;
-    font-weight: 800;
+.profilepara {
+    display: flex;
+    margin-left: 35px;
+    margin-top: 25px;
+    margin-right: 70px;
+    font-family: Roboto;
     font-size: 25px;
-    line-height: 40px;
+    line-height: 38px;
 
-    color: #F0F2F0;
+    color: #FFFFFF;
 }
 
-.portfolionav {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+.subcontent {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2D398;
+}
+
+.info2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    display: flex;
+    width: 264px;
+    height: 76px;
+    margin-top: 40px;
+    margin-left: 35px;
+}
+
+.button2 {
+    display: flex;
+    width: 264px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+.img {
+    height: 580px;
+    width: 420px;
+    overflow: hidden;
+}
+
+.img2 {
+    height: 800px;
+    overflow: hidden;
+}
+
+.img3 {
+    width: 159px;
+}
+
+.img4 {
+    display: flex;
+    flex-direction: column;
+    width: 159px;
+}
+
+.img5 {
+    display: flex;
+    flex-direction: column;
+    width: 159px;
+    margin-top: -10px;
 }
 
 .footer {
-    position: absolute;
+    background-color: #0E4C59;
+    top: 0;
     width: 100%;
-    height: 420px;
-    left: 0px;
-    top: 1700px;
-
-    background: #0E4C59;
+    height: 100%;
+    margin-top: 95px;
+    bottom: 0px;
 }
 
-.footerheading {
-    position: absolute;
-    width: 100%;
-    height: 46px;
-    left: 55px;
-    top: 30px;
+.Contactinfo {
+    color: white; 
+    line-height: 35px;
+    margin: 65px;
+}
 
-    font-family: Abhaya Libre ExtraBold;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 48px;
-    /* or 133% */
+.Site {
+    color: white; 
+    line-height: 35px; 
+    margin-top: 65px;
+    margin-right: 500px;
+}
 
+.servicesinfo {
+    display: flex;
+    flex-direction: column;
     color: #FFFFFF;
-
-    text-decoration: none;
-
+    padding-left: 65px;
+    line-height: 40px;
+    font-size: 18px;
 }
 
-.sitelist {
-    position: absolute;
-    width: 868px;
-    height: 203px;
-    left: 85px;
-    top: 100px;
+.servicesinfo ul {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 50px;
+    font-size: 28px;
+    margin-left: 150px;
+}
 
-    font-family: Abhaya Libre ExtraBold;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 48px;
-    /* or 200% */
+.servicesinfo2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2D398;
+    width: 1500px;
+    padding-left: 45px;
+    line-height: 40px;
+    font-size: 18px;
+}
 
+.servicebutton {
+    display: flex;
+    width: 300px;
+    margin-top: 15px;
+    margin-bottom: 14px;
+    margin-left: 130px;
+}
+
+.subheading {
+    display: flex;
+    margin-top: 75px;
+    margin-left: 130px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 40px;
+    text-decoration: underline;
     color: #FFFFFF;
-
-    text-decoration: none;
-
+    text-align: center;
 }
 
-.footerheading2 {
-    position: absolute;
-    width: 100%;
-    height: 46px;
-    left: 1000px;
-    top: 30px;
-
-    font-family: Abhaya Libre ExtraBold;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 36px;
-    line-height: 48px;
-    /* or 133% */
-
-    color: #FFFFFF;
-
-    text-decoration: none;
+.subheading2 {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.active {
+    text-decoration: underline;
+    border: white double 3px;
 }
 
-.sitelist2 {
-    position: absolute;
-    width: 868px;
-    height: 203px;
-    left: 1000px;
-    top: 100px;
-
-    font-family: Abhaya Libre ExtraBold;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 48px;
-    /* or 200% */
-
-    color: #FFFFFF;
-
-    text-decoration: none;
+.title {
+    margin-left: 35px;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    text-decoration: underline;
+    color: white;
 }
 
-.site a {
-    color: #FFFFFF!important; 
-    text-decoration: none!important;
+.box {
+    background-color: #B58D41;
+    margin-top: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.box2 {
+    background-color: #B58D41;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding: 20px;
+}
+
+.boxpara {
+    color: white;
+    margin-left: 35px;
+    font-size: 20px;
+    font-family: Roboto;
+    margin-top: 10px;
+}
+
+.timeline {
+    text-align: center;
+    font-size: 50px;
+    font-style: Roboto;
+    margin-top: 70px;
+    background-color: #9e0031;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 50px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    margin-left: 100px;
+    background-color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.category2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 40px;
+    margin-left: 30px;
+}
+
+.f-title {
+    font-size: 30px;
 }
