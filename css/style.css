@@ -26,15 +26,15 @@ body {
 }
 
 .Buttons img {
-    width: 20em;
-    margin: 1em 1em;
+    width: 18em;
+    display: flex;
+    padding: 1em;
 }
 
 .Buttons {
+    margin-top: 1.5em;
     display: flex;
     flex-direction: column;
-    margin-top: 2em;
-    margin-bottom: 1em;
 }
 
 .heading {
@@ -45,6 +45,7 @@ body {
     margin-bottom: 0.5em;
     padding-top: 0.7em;
     padding-bottom: 0.7em;
+    padding-right: 1em;
 }
 
 .heading img {
@@ -65,15 +66,16 @@ body {
 
 .navi {
     display: flex;
-    align-items: flex-start;
+    justify-content: flex-end;
     width: 100%;
     background-color: #0E4C59;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
-    padding-left: 1.2em;
-    padding-right: 0em;
+    padding-right: 1.2em;
 
 }
+
+
 
 header svg {
     display: flex;
@@ -93,6 +95,8 @@ nav {
     z-index: 999;
     transform: translateX(100%);
     transition: transform .5s ease-in-out;
+
+
 }
 
 nav ul {
@@ -182,18 +186,6 @@ nav ul li a:hover {
     border-bottom: #32161F solid 5px;
 }
 
-.r-button {
-    width: 50% !important; 
-    display: flex; 
-    margin-top: 0.3em;
-}
-
-.s-button {
-    width: 50% !important; 
-    display: flex; 
-    margin-top: 0.2em;
-}
-
 footer {
     width: 100%;
     display: flex;
@@ -233,8 +225,6 @@ footer ul {
 @media only screen and (min-width: 600px) {
     .quote {
         font-size: 1.5em;
-        display: flex;
-        justify-items: flex-end;
         margin-left: 3em;
     }
 
@@ -262,18 +252,6 @@ footer ul {
         margin-bottom: 1em;
     }
 
-    .r-button {
-        width: 40% !important; 
-        display: flex; 
-        margin-top: 0.3em;
-    }
-
-    .s-button {
-        width: 40% !important; 
-        display: flex; 
-        margin-top: 0.2em;
-    }
-
     .f-title {
         font-size: 1.3em;
         font-weight: bold;
@@ -294,16 +272,15 @@ footer ul {
 @media only screen and (min-width: 768px) {
     .quote {
         font-size: 1.9em;
-        display: flex;
-        justify-items: flex-end;
         align-items: center;
     }
 
     .heading {
         display: flex;
-        flex-direction: row;
-        text-align: end;
-        padding: 0.8em 0.8em;
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        padding-left: 0.8em;
+        padding-right: 2.5em;
     }
 
     header svg {
@@ -326,11 +303,6 @@ footer ul {
         height: auto;
         margin-left: 1em;
         margin-right: 1em;
-        border-style: outset;
-        border-top-color: transparent;
-        border-left-color: transparent;
-        border-right: #32161F solid 5px;
-        border-bottom: #32161F solid 5px;
     }
 
     .a-title {
@@ -350,18 +322,6 @@ footer ul {
         margin-top: 0.5rem;
     }
 
-    .r-button {
-        width: 30% !important; 
-        display: flex; 
-        margin-top: 0.3em;
-    }
-
-    .s-button {
-        width: 30% !important; 
-        display: flex; 
-        margin-top: 0.2em;
-    }
-
     footer {
         padding-top: 1.5em;
         padding-left: 1.5em;
@@ -379,9 +339,9 @@ footer ul {
 
     .Site {
         margin-left: 10em;
-        display: flex;
-        flex-direction: column;
     }
+
+
 
     .menu {
         display: none;
@@ -475,23 +435,6 @@ footer ul {
         height: auto;
         margin-left: 1em;
         margin-right: 1em;
-        border-style: outset;
-        border-top-color: transparent;
-        border-left-color: transparent;
-        border-right: #32161F solid 5px;
-        border-bottom: #32161F solid 5px;
-    }
-
-    .r-button {
-        width: 25% !important; 
-        display: flex; 
-        margin-top: 0.3em;
-    }
-
-    .s-button {
-        width: 25% !important; 
-        display: flex; 
-        margin-top: 0.2em;
     }
 
 }
@@ -521,22 +464,17 @@ footer ul {
         margin-top: 0.1em;
     } 
 
-    .r-button {
-        width: 30% !important; 
-        display: flex; 
-    }
-
-    .s-button {
-        width: 30% !important; 
-        display: flex; 
-    }
-
     .Buttons {
         display: flex;
         flex-direction: row;
-        margin-top: 4em;
         margin-bottom: 2em;
         margin-left: 2em;
+    }
+
+    .Buttons img {
+        width: 25em;
+        display: flex;
+        padding: 1em;
     }
 
     .content {
@@ -632,21 +570,6 @@ footer ul {
         height: auto;
         margin-left: 1em;
         margin-right: 1em;
-        border-style: outset;
-        border-top-color: transparent;
-        border-left-color: transparent;
-        border-right: #32161F solid 5px;
-        border-bottom: #32161F solid 5px;
-    }
-
-    .r-button {
-        width: 24% !important; 
-        display: flex; 
-    }
-
-    .s-button {
-        width: 24% !important; 
-        display: flex; 
     }
 
     .a-info {
@@ -687,7 +610,6 @@ footer ul {
         display: flex;
         flex-direction: column;
     }
-
 }
 
 @media only screen and (min-width: 2560px) {
@@ -759,11 +681,6 @@ footer ul {
         height: auto;
         margin-left: 1em;
         margin-right: 1em;
-        border-style: outset;
-        border-top-color: transparent;
-        border-left-color: transparent;
-        border-right: #32161F solid 5px;
-        border-bottom: #32161F solid 5px;
     }
 
     .a-title {
@@ -816,8 +733,6 @@ footer ul {
 
     .Site {
         margin-left: 28em;
-        display: flex;
-        flex-direction: column;
     }
 }
 
