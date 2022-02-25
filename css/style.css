@@ -64,21 +64,19 @@ body {
     margin-left: 3em;
 }
 
-.navi {
+.navig {
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    height: auto;
     background-color: #0E4C59;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-right: 1.2em;
-
+    padding: 0.2em;
 }
 
-header svg {
+.navig svg {
     display: flex;
     justify-items: flex-end;
-    width: 2.7em;
+    width: 2em;
     cursor: pointer;
     fill: white; 
 }
@@ -93,8 +91,6 @@ nav {
     z-index: 999;
     transform: translateX(100%);
     transition: transform .5s ease-in-out;
-
-
 }
 
 nav ul {
@@ -235,7 +231,7 @@ footer ul {
         fill: white; 
     }
 
-    .navi {
+    .navig {
         display: flex;
         justify-content: flex-end;
         width: 100%;
@@ -247,10 +243,31 @@ footer ul {
     }
 }
 
+@media only screen and (min-width: 400px) {
+    .navig {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 2em;
+        background-color: #0E4C59;
+        padding: 0.5em;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .quote {
-        font-size: 1.5em;
+        font-size: 1.3em;
         margin-left: 3em;
+        margin-right: 1em;
+    }
+
+    .navig {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 2em;
+        background-color: #0E4C59;
+        padding: 1em;
     }
 
     .a-info {
@@ -298,6 +315,15 @@ footer ul {
     .quote {
         font-size: 1.9em;
         align-items: center;
+    }
+
+    .navig {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 2em !important;
+        background-color: #0E4C59;
+        padding: 0.5em;
     }
 
     .heading {
@@ -402,11 +428,11 @@ footer ul {
         box-shadow: 0 0 10px white;
     }
 
-    nav svg {
+    .navig svg {
         display: none;
     }
 
-    .navi {
+    .navig {
         display: flex;
         align-items: flex-start;
         width: 100%;
@@ -560,7 +586,7 @@ footer ul {
         padding: 2em 1em;
     }
 
-    .navi {
+    .navig {
         display: flex;
         align-items: flex-start;
         width: 100%;
@@ -665,7 +691,7 @@ footer ul {
         padding-left: 3em;
     }
 
-    .navi {
+    .navig {
         display: flex;
         align-items: flex-start;
         width: 100%;
