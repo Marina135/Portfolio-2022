@@ -54,7 +54,7 @@ body {
     margin-left: 0.3em;
 }
 
-.navig {
+.navi {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -64,7 +64,7 @@ body {
     overflow-y: hidden;
 }
 
-.navig svg {
+.navi svg {
     display: flex;
     justify-items: flex-end;
     width: 2em;
@@ -215,17 +215,6 @@ footer ul {
         cursor: pointer;
         fill: white; 
     }
-
-    .navi {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        background-color: #0E4C59;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        padding-right: 1.2em;
-    
-    }
 }
 
 @media only screen and (min-width: 400px) {
@@ -233,7 +222,7 @@ footer ul {
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        height: auto;
+        height: 8vh;
         background-color: #0E4C59;
         padding: 0.5em;
     }
@@ -244,7 +233,7 @@ footer ul {
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        height: auto;
+        height: 8vh;
         background-color: #0E4C59;
         padding: 1em;
     }
