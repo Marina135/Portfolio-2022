@@ -37,31 +37,21 @@ body {
     flex-direction: column;
 }
 
-.heading {
+.header {
     display: flex;
     flex-direction: row;
-    text-align: end;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
-    padding-right: 1em;
-}
-
-.heading img {
-    display: flex;
-    align-self: center;
-    width: 18%;
-    height: auto;
-    margin-left: 1em;
-}
-
-.quote {
-    font-size: 1em;
-    display: flex;
-    justify-items: flex-end;
     align-items: center;
-    margin-left: 3em;
+    padding: 1em 0.8em;
+}
+
+.header img {
+    width: 6rem;
+    height: auto;
+}
+
+.header h1 {
+    font-size: 1em;
+    margin-left: 0.3em;
 }
 
 .navig {
@@ -218,12 +208,6 @@ footer ul {
 }
 
 @media only screen and (min-width: 375px) {
-    .quote {
-        font-size: 1em;
-        margin-left: 2em;
-        line-height: 1.3em;
-    }
-
     header svg {
         display: flex;
         justify-items: flex-end;
@@ -232,7 +216,7 @@ footer ul {
         fill: white; 
     }
 
-    .navig {
+    .navi {
         display: flex;
         justify-content: flex-end;
         width: 100%;
@@ -245,7 +229,7 @@ footer ul {
 }
 
 @media only screen and (min-width: 400px) {
-    .navig {
+    .navi {
         display: flex;
         justify-content: flex-end;
         width: 100%;
@@ -256,13 +240,7 @@ footer ul {
 }
 
 @media only screen and (min-width: 600px) {
-    .quote {
-        font-size: 1.3em;
-        margin-left: 3em;
-        margin-right: 1em;
-    }
-
-    .navig {
+    .navi {
         display: flex;
         justify-content: flex-end;
         width: 100%;
@@ -313,34 +291,32 @@ footer ul {
 }
 
 @media only screen and (min-width: 768px) {
-    .quote {
-        font-size: 1.9em;
-        align-items: center;
-    }
-
-    .navig {
+    .navi {
         display: flex;
         justify-content: flex-end;
         width: 100%;
-        height: 2em !important;
+        height: auto;
         background-color: #0E4C59;
         padding: 0.5em;
     }
 
-    .heading {
-        display: flex;
-        padding-top: 0.8em;
-        padding-bottom: 0.8em;
-        padding-left: 0.8em;
-        padding-right: 2.5em;
+    .header h1 {
+        font-size: 1.5em;
+        margin-left: 1em;
     }
 
-    header svg {
+    .header svg {
         display: flex;
         justify-items: flex-end;
         width: 1em;
         cursor: pointer;
         fill: white; 
+    }
+
+    .header img {
+        width: 7rem;
+        height: auto;
+        margin-left: 1em;
     }
 
     .content {
@@ -393,8 +369,6 @@ footer ul {
         margin-left: 10em;
     }
 
-
-
     .menu {
         display: none;
     }
@@ -429,32 +403,13 @@ footer ul {
         box-shadow: 0 0 10px white;
     }
 
-    .navig svg {
+    nav svg {
         display: none;
-    }
-
-    .navig {
-        display: flex;
-        align-items: flex-start;
-        width: 100%;
-        background-color: #0E4C59;
-        padding-top: 0.1em;
-        padding-bottom: 0.1em;
-        padding-left: 0.7em;
-        padding-right: 0em;
-    
     }
 
 }
 
 @media only screen and (min-width: 900px) {
-    .quote {
-        font-size: 2.1em;
-        display: flex;
-        justify-items: flex-end;
-        align-items: center;
-    }
-
     .page-title {
         font-size: 3em;
         margin-left: 1.5rem;
@@ -493,13 +448,10 @@ footer ul {
 
 
 @media only screen and (min-width: 1000px) {
-    .quote {
-        font-size: 2.5em;
-        display: flex;
-        justify-items: flex-end;
-        align-items: center;
+    .header h1 {
+        font-size: 1.8em;
+        margin-left: 1em;
     }
-
     .page-title {
         font-size: 4em;
         margin-left: 2.2rem;
@@ -561,30 +513,12 @@ footer ul {
 }
 
 @media only screen and (min-width: 1440px) {
-    .quote {
-        font-size: 2.8em;
-        display: flex;
-        justify-items: flex-end;
-        align-items: center;
-        margin-left: 9em;
-        line-height: 1.3em;
-    }
-
     .heading img {
         display: flex;
         align-self: center;
         width: 13%;
         height: auto;
         margin-left: 1em;
-    }
-
-    .heading {
-        display: flex;
-        flex-direction: row;
-        text-align: end;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        padding: 2em 1em;
     }
 
     .navig {
@@ -665,31 +599,12 @@ footer ul {
 }
 
 @media only screen and (min-width: 2560px) {
-    .quote {
-        font-size: 5em;
-        display: flex;
-        justify-items: flex-end;
-        align-items: center;
-        margin-left: 9em;
-    }
-
     .heading img {
         display: flex;
         align-self: center;
-        width: 12%;
+        width: 15%;
         height: auto;
         margin-left: 1em;
-    }
-
-    .heading {
-        display: flex;
-        flex-direction: row;
-        text-align: end;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        padding-top: 2em;
-        padding-bottom: 2em;
-        padding-left: 3em;
     }
 
     .navig {
