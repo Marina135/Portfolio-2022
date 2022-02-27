@@ -347,10 +347,14 @@ footer ul {
         margin-left: 1em;
     }
 
+    .hero {
+        margin-top: 1em;
+    }
+
     .content {
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 2em;
+        margin-top: 3em;
         margin-bottom: 1em;
     }
 
@@ -519,7 +523,7 @@ footer ul {
     .content {
         display: flex;
         flex-direction: row-reverse;
-        margin-top: 1em;
+        margin-top: 2em;
         margin-bottom: 1.3em;
     }
 
@@ -556,6 +560,10 @@ footer ul {
     .header h1 {
         font-size: 2.3em;
         margin-left: 1.5em;
+    }
+
+    .hero {
+        margin-top: 2em;
     }
 
     .line {
@@ -647,6 +655,10 @@ footer ul {
     .header h1 {
         font-size: 4em;
         margin-left: 1.5em;
+    }
+
+    .hero {
+        margin-top: 3em;
     }
 
     .navi {
