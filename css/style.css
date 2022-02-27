@@ -737,6 +737,26 @@ footer ul {
         animation: introLoad 3s forwards;
     }
 
+    .s-title {
+        font-size: 1.8em;
+    }
+    
+    .s-list {
+        font-size: 1.3em;
+        line-height: 1.9em;
+    }
+
+    .s-info {
+        padding-left: 2.5em;
+        padding-top: 2.3em;
+        padding-bottom: 2em;
+    }
+
+    .column2 {
+        margin-top: 4.6em;
+        margin-left: 4em;
+    }
+
     .navi {
         height: 8vh;
         display: flex;
@@ -761,7 +781,7 @@ footer ul {
         margin-right: 1em;
     }
 
-    .content img {
+    .content img.profile {
         width: 20rem;
         height: auto;
         margin-left: 1em;
@@ -809,6 +829,20 @@ footer ul {
 }
 
 @media only screen and (min-width: 2560px) {
+    .hero img.Back {
+        margin-bottom: 1.2em;
+        margin-left: 2em;
+        width: 7em;
+    }
+
+    .path {
+        padding-left: 0.5em;
+    }
+
+    .pathtext {
+        font-size: 2.5em;
+    }
+
     .header img {
         width: 20rem;
         height: auto;
@@ -868,13 +902,6 @@ footer ul {
         margin-right: 1.7em;
     }
 
-    .content img {
-        width: 90rem;
-        height: auto;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-
     .a-title {
         font-size: 5em;
     }
@@ -897,7 +924,7 @@ footer ul {
         padding-right: 2em;
     } 
 
-    .content img {
+    .content img.profile {
         width: 70rem;
         height: auto;
         margin-left: 1em;
@@ -915,6 +942,32 @@ footer ul {
         margin-top: 3em;
         margin-bottom: 5em;
         margin-left: 2em;
+    }
+
+    .s-title {
+        font-size: 3.5em;
+    }
+
+    .s-list {
+        font-size: 2.6em;
+        line-height: 1.9em;
+    }
+
+    .s-info {
+        padding-left: 7em;
+        padding-top: 5em;
+        padding-bottom: 4em;
+    }
+
+    .column2 {
+        margin-top: 8.9em;
+        margin-left: 15em;
+    }
+
+    .content img.w-button {
+        width: 35rem;
+        height: auto;
+        margin-bottom: 1.5em;
     }
 
     .f-title {
