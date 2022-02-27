@@ -11,7 +11,6 @@ body {
     margin: 1rem 0.5rem;
 }
 
-
 .w-subtitle {
     font-size: 3rem;
     text-align: center;
@@ -123,13 +122,17 @@ nav ul li a:hover {
     margin-top: 0.5rem;
 }
 
+.banner {
+    animation: introLoad2 6s forwards; 
+}
+
 .line {
     display: flex;
     width: 100%;
 
     border: 1px solid #111C26;
 
-    animation: introLoad 4s forwards;
+    animation: introLoad 2s forwards;
 }
 
 .content {
@@ -277,18 +280,54 @@ footer ul {
         display: flex;
         flex-direction: column;
     }
+
+    .navi {
+        height: 8vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .navi svg.menu {
+        display: none;
+    }
+
+    nav {
+        transform: translateX(0);
+        position: unset;
+        display: block;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 0.8em 1.2em;
+        display: block;
+        width: 100%;
+        height: auto;
+        font-size: 1em;
+    }
+
+    nav ul li a:hover {
+        font-weight: bolder;
+        background-color: white;
+        color: #0E4C59;
+        box-shadow: 0 0 10px white;
+    }
+
+    nav svg.close {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-    .navi {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        height: auto;
-        background-color: #0E4C59;
-        padding: 0.5em;
-    }
-
     .header h1 {
         font-size: 1.5em;
         margin-left: 1em;
@@ -358,7 +397,13 @@ footer ul {
         margin-left: 10em;
     }
 
-    .menu {
+    .navi {
+        height: 8vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .navi svg.menu {
         display: none;
     }
 
@@ -392,7 +437,7 @@ footer ul {
         box-shadow: 0 0 10px white;
     }
 
-    nav svg {
+    nav svg.close {
         display: none;
     }
 
@@ -441,6 +486,7 @@ footer ul {
         font-size: 1.8em;
         margin-left: 1em;
     }
+
     .page-title {
         font-size: 4em;
         margin-left: 2.2rem;
@@ -502,24 +548,29 @@ footer ul {
 }
 
 @media only screen and (min-width: 1440px) {
-    .heading img {
-        display: flex;
-        align-self: center;
-        width: 13%;
+    .header img {
+        width: 10rem;
         height: auto;
-        margin-left: 1em;
     }
 
-    .navig {
+    .header h1 {
+        font-size: 2.3em;
+        margin-left: 1.5em;
+    }
+
+    .line {
         display: flex;
-        align-items: flex-start;
         width: 100%;
-        background-color: #0E4C59;
-        padding-top: 0.5em;
-        padding-bottom: 0.5em;
-        padding-left: 0.7em;
-        padding-right: 0em;
-        margin-bottom: 1.3em;
+    
+        border: 2px solid #111C26;
+    
+        animation: introLoad 3s forwards;
+    }
+
+    .navi {
+        height: 8vh;
+        display: flex;
+        align-items: center;
     }
 
     nav ul li a {
@@ -588,15 +639,17 @@ footer ul {
 }
 
 @media only screen and (min-width: 2560px) {
-    .heading img {
-        display: flex;
-        align-self: center;
-        width: 15%;
+    .header img {
+        width: 20rem;
         height: auto;
-        margin-left: 1em;
     }
 
-    .navig {
+    .header h1 {
+        font-size: 4em;
+        margin-left: 1.5em;
+    }
+
+    .navi {
         display: flex;
         align-items: flex-start;
         width: 100%;
@@ -615,6 +668,15 @@ footer ul {
         display: block;
         width: 100%;
         font-size: 2.2em;
+    }
+
+    .line {
+        display: flex;
+        width: 100%;
+    
+        border: 4px solid #111C26;
+    
+        animation: introLoad 4s forwards;
     }
 
     .page-title {
@@ -661,10 +723,22 @@ footer ul {
         padding-right: 2em;
     } 
 
+    .content img {
+        width: 70rem;
+        height: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+        border-style: outset;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right: #32161F solid 7px;
+        border-bottom: #32161F solid 7px;
+    }
+
     .Buttons {
         display: flex;
         flex-direction: row;
-        margin-top: 5em;
+        margin-top: 3em;
         margin-bottom: 5em;
         margin-left: 2em;
     }
@@ -690,11 +764,27 @@ footer ul {
     .Site {
         margin-left: 28em;
     }
+
+    .Buttons img {
+        width: 45em;
+        display: flex;
+        padding: 1em;
+    }
 }
 
 @keyframes introLoad {
     from {
         clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
+
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+@keyframes introLoad2 {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
     to {
