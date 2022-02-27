@@ -116,6 +116,27 @@ nav ul li a:hover {
     padding-top: 1em;
 }
 
+.hero img.Back {
+    display: flex;
+    align-items: center;
+    margin-top: 0em;
+    margin-bottom: 0.3em;
+    margin-left: 0.5em;
+    width: 3em;
+}
+
+.path {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.pathtext {
+    margin-left: 0.3em;
+    text-decoration: underline;
+    font-size: 0.8em;
+}
+
 .page-title {
     font-size: 2.3em;
     margin-left: 1rem;
@@ -123,7 +144,7 @@ nav ul li a:hover {
 }
 
 .banner {
-    animation: introLoad2 6s forwards; 
+    animation: introLoad2 4s forwards; 
 }
 
 .line {
@@ -162,7 +183,27 @@ nav ul li a:hover {
     margin-top: 0.1em;
 }
 
-.content img {
+.s-info {
+    background-color: #0E4C59;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: white;
+    padding-top: 1em;
+    padding-left: 0.8em;
+}
+
+.s-title {
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+.s-list {
+    font-size: 1em;
+    line-height: 1.9em;
+}
+
+.content img.profile {
     width: 8rem;
     height: auto;
     margin-left: 1em;
@@ -172,6 +213,12 @@ nav ul li a:hover {
     border-left-color: transparent;
     border-right: #32161F solid 5px;
     border-bottom: #32161F solid 5px;
+}
+
+.content img.w-button {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 0.8em;
 }
 
 footer {
@@ -234,10 +281,8 @@ footer ul {
 @media only screen and (min-width: 600px) {
     .navi {
         display: flex;
-        justify-content: flex-end;
         width: 100%;
         height: 8vh;
-        background-color: #0E4C59;
         padding: 1em;
     }
 
@@ -257,6 +302,19 @@ footer ul {
         line-height: 2em;
         margin-top: 0.1em;
     } 
+
+    .content img.profile {
+        width: 12rem;
+        height: auto;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .s-content {
+        padding-top: 1.2em;
+        padding-left: 1.2em;
+        padding-bottom: 1.2em;
+    }
 
     .Buttons {
         display: flex;
@@ -325,6 +383,28 @@ footer ul {
     nav svg.close {
         display: none;
     }
+
+    .s-info {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .column2 {
+        margin-top: 2.6em;
+        margin-left: 1em;
+    }
+
+    .serviceinfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content img.w-button {
+        width: 12rem;
+        height: auto;
+        margin-bottom: 0.8em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -351,6 +431,18 @@ footer ul {
         margin-top: 1em;
     }
 
+   .path {
+       margin-bottom: 0.5em;
+   }
+
+   .pathtext {
+       font-size: 1em;
+   }
+
+   .column2 {
+       margin-top: 4em;
+   }
+
     .content {
         display: flex;
         flex-direction: row-reverse;
@@ -358,7 +450,13 @@ footer ul {
         margin-bottom: 1em;
     }
 
-    .content img {
+    .content img.w-button {
+        width: 15rem;
+        height: auto;
+        margin-bottom: 0.8em;
+    }
+
+    .content img.profile {
         width: 16rem;
         height: auto;
         margin-left: 1em;
@@ -454,6 +552,14 @@ footer ul {
         margin-top: 0.5rem;
     }
 
+    .path {
+        padding-left: 0.5em;
+    }
+
+    .hero img.Back {
+        width: 5em;
+    }
+
     .a-title {
         font-size: 2em;
     }
@@ -482,10 +588,45 @@ footer ul {
         margin-right: 1em;
     }
 
+    .s-content {
+        padding-top: 1.5em;
+        padding-left: 1.8em;
+        padding-bottom: 1.2em;
+    }
+
+    .column2 {
+        margin-left: 2em;
+        margin-top: 3.4em;
+    }
+
+    .s-title {
+        font-size: 1.6em;
+        margin-top: 0.7em;
+        margin-bottom: 0.2em;
+    }
+    
+    .s-list {
+        font-size: 1em;
+        line-height: 1.9em;
+    }
+
 }
 
 
 @media only screen and (min-width: 1000px) {
+    .hero img.Back {
+        width: 4em;
+    }
+
+    .path {
+        margin-top: -0.5em;
+    }
+
+    .pathtext {
+        font-size: 1.3em;
+        margin-left: 0.5em;
+    }
+    
     .header h1 {
         font-size: 1.8em;
         margin-left: 1em;
@@ -549,17 +690,38 @@ footer ul {
         flex-direction: column;
     }
 
+    .s-list {
+        line-height: 2em;
+    }
+
+    .column2 {
+        margin-top: 4.2em;
+    }
+
 }
 
 @media only screen and (min-width: 1440px) {
     .header img {
-        width: 10rem;
+        width: 8rem;
         height: auto;
     }
 
     .header h1 {
         font-size: 2.3em;
         margin-left: 1.5em;
+    }
+
+    .hero img.Back {
+        width: 5em;
+    }
+
+    .path {
+        padding-left: 0.5em;
+        margin-top: -1em;
+    }
+
+    .pathtext {
+        font-size: 1.5em;
     }
 
     .hero {
