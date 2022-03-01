@@ -163,6 +163,18 @@ nav ul li a:hover {
     margin-top: 1em;
 }
 
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.portfolio img {
+    width: 23em;
+    height: auto;
+}
+
 .a-info {
     color: white;
     display: flex;
@@ -310,6 +322,16 @@ footer ul {
         margin-right: 1em;
     }
 
+    .portfolio {
+        padding-top: 1em;
+        padding-left: 2em;
+    }
+    
+    .portfolio img {
+        width: 28em;
+        height: auto;
+    }    
+
     .s-content {
         padding-top: 1.2em;
         padding-left: 1.2em;
@@ -445,15 +467,24 @@ footer ul {
 
    .path {
        margin-bottom: 0.5em;
-   }
+    }
 
    .pathtext {
        font-size: 1em;
-   }
+    }
+
+   .portfolio {
+        padding-left: 3em;
+    }
+
+    .portfolio img {
+        width: 35em;
+        height: auto;
+    }    
 
    .column2 {
        margin-top: 4em;
-   }
+    }
 
     .content {
         display: flex;
@@ -589,6 +620,15 @@ footer ul {
         width: 5em;
     }
 
+    .portfolio {
+        padding-left: 4em;
+    }
+
+    .portfolio img {
+        width: 40em;
+        height: auto;
+    }    
+
     .a-title {
         font-size: 2em;
     }
@@ -666,6 +706,11 @@ footer ul {
         margin-left: 2.2rem;
         margin-top: 0.5rem;
     }
+
+    .portfolio img {
+        width: 40em;
+        height: auto;
+    }    
 
     .a-title {
         font-size: 2.5em;
@@ -776,6 +821,11 @@ footer ul {
     .hero img.Back {
         width: 5em;
     }
+
+    .portfolio img {
+        width: 70em;
+        height: auto;
+    }    
 
     .path {
         padding-left: 0.5em;
@@ -903,6 +953,16 @@ footer ul {
         font-size: 5.5rem;
     }
 
+    .portfolio {
+        padding-top: 1em;
+        padding-left: 4em;
+    }
+
+    .portfolio img {
+        width: 90em;
+        height: auto;
+    }    
+
     .Buttons {
         display: flex;
         flex-direction: row !important;
@@ -987,6 +1047,17 @@ footer ul {
         margin-left: 2em;
         width: 7em;
     }
+
+    .portfolio {
+        padding-top: 1em;
+        padding-left: 6em;
+        margin-bottom: 5em;
+    }
+
+    .portfolio img {
+        width: 100em;
+        height: auto;
+    }    
 
     .path {
         padding-left: 0.5em;
